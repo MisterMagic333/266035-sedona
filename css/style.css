@@ -1,0 +1,56 @@
+.main-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	font-family: PT Sans;
+	color: #000000;
+	font-weight: bold;
+}
+
+body {
+	font-size: 14px;
+	line-height: 21px;
+	font-family: PT Sans;
+	color: #333333;
+	font-weight: Regular;
+}
+
+.main-title , .inner-product-title {
+	font-size: 21px;
+	line-height: 26px;
+	font-family: PT Sans;
+	color: #000000;
+	font-weight: bold;
+}
+
+.main-title p {
+	font-size: 14px;
+	line-height: 26px;
+	font-family: PT Sans;
+	color: #333333;
+	font-weight: Regular;
+}
+
+.content-title {
+	font-size: 21px;
+	line-height: 21px;
+	font-family: PT Sans;
+	color: #000000;
+	font-weight: bold;
+
+}
+
+.search-title {
+	font-size: 30px;
+	line-height: 24px;
+	font-family: PT Sans;
+	color: #000000;
+	font-weight: bold;
+}
+
+.filter-title {
+	font-size: 16px;
+	line-height: 21px;
+	font-family: PT Sans;
+	color: #ffffff;
+	font-weight: bold;
+}
