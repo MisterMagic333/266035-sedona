@@ -1,14 +1,16 @@
 body {
 	font-size: 14px;
 	line-height: 21px;
-	font-family: PT Sans;
+	font-family: "PT Sans", "Arial", sans-serif;
 	color: #333333;
 	font-weight: Regular;
+	text-transform: uppercase;
+	background-color: #f2f2f2;
+	width: 1280px;
 }
 
 .container {
 	width: 1200px;
-	padding: 0 40px;
 	margin:0 auto;
 }
 
@@ -17,46 +19,152 @@ body {
 /* =====================
 	    HEADER
 ===================== */
+.main-header {
+	max-height: 56px;
+	margin:0px;
+	padding: 0px;
+	background: #ffffff;
+	list-style: none;
+}
 
 
 .main-navigation {
-	justify-content: space-between;
-	display: flex;
-	font-size: 14px;
-	line-height: 26px;
-	font-family: PT Sans;
-	color: #000000;
-	font-weight: bold;
+	font-size: 0;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	
 }
 
-.main-navigation li {
-	width: 200px;
-	min-height: 55px;
-	list-style: none;
+.header-logo {
+	z-index: 2;
+	padding-left: 50px;
+	position: relative;
+	
 }
+
+.main-navigation a {
+	display: block;
+	text-align: center;
+	padding: 18px 0px;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	color: #333333;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+
+}
+ 
+
+
+.main-navigation li {
+	
+	
+	vertical-align: top;
+	display: inline-block;
+	width: 240px;
+	list-style: none;
+	
+	
+}
+
 
 /* =====================
 	    MAIN
 ===================== */
+.welcome-block {
+	margin-bottom: -10px;
+}
+
+.main-title {
+	position: absolute;
+	top:670px;
+	left:400px;
+}
+
+
+
+.main-title  p {
+	font-size: 14px;
+	line-height: 26px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	color: #333333;
+	font-weight: Regular;
+}
+
+.main-title pre  {
+
+	font-size: 21px;
+	line-height: 14px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	color: #000000;
+	font-weight: bold;
+}
 
 .feature-block {
 	display: flex;
+	margin:0px;
+	max-height: 255px;
+}
+
+.feature-img {
+	margin: 0px;
+	padding: 0px;
 }
 
 .feature-description  {
+	padding-top: 40px;
+	text-align: center;
 	background-color: #81b3d2; 
 	color: #ffffff;
+	margin: 0px;
+	width:400px;
+}
+
+.first-row .product-item {
+	text-align: center;
+	width:400px;
+	height:330px;
+}
+
+
+.first-row .item-img {
+	margin-top: 60px;
+	margin-bottom: 39px;
+}
+
+.first-row .item-title {
+	margin-bottom: 30px;
+	margin-top: 0px;
 }
 
 .product-items {
 	display: flex;
 	justify-content: space-between;
+	margin: 0px;
+
 }
+
+.second-row .product-item {
+	text-align: center;
+	width:400px;
+	height:255px;
+	margin: 0px;
+}
+
+.second-row .item-title {
+	margin-top: 50px;
+}
+
+
  
 .main-title , .inner-product-title {
 	font-size: 21px;
 	line-height: 26px;
-	font-family: PT Sans;
+	font-family: "PT Sans", "Arial", sans-serif;
 	color: #000000;
 	font-weight: bold;
 }
@@ -72,24 +180,91 @@ body {
 .content-title {
 	font-size: 21px;
 	line-height: 21px;
-	font-family: PT Sans;
+	font-family: "PT Sans", "Arial", sans-serif;
 	color: #000000;
 	font-weight: bold;
 }
 
-.product-items:nth-of-type(6) {
-	background: #eeeeee; 
+.first-row {
+	background: #ffffff;
 }
 
-.product-search {
-	width: 576px;
-	margin:0 auto;
+.second-row {
+	background-color: #eeeeee; 
 }
+
+
+
+.product-search {
+	text-align: center;
+	width:1200px;
+	background: #ffffff;
+	height:290px;
+}
+
+
+.attention-block {
+	padding-top: 55px;
+}
+
+.attention-text {
+	margin-top: 35px;
+	margin-bottom: 46px;
+
+}
+
+.search-block {
+	
+	display: inline-block;
+	width: 570px;
+	height: 85px;
+	background-color: #766357;
+	margin: 0px;
+
+}
+
+.search-block a {
+	display: block;
+	vertical-align: top;
+	text-decoration: none;
+	color:#ffffff;
+	font-size: 21px;
+	line-height: 26px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: bold;
+	padding-top: 30px;
+}
+
+
+.search-title {
+	
+	font-size: 30px;
+	line-height: 24px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* ============
+   POP-UP-FORM
+=============== */
+
+.pop-up-form{
+	
+	position: absolute;
+	width: 570px;
+	height: 400px;
+	background: #ffffff;
+}
+
+
+
 
 /* ============
      FILTER
 =============== */
-
+/*
 .filter {
 	min-height: 200px;
 	display: flex;
@@ -109,7 +284,7 @@ body {
 /* ============
   SORTING-MENU
 =============== */
-
+/*
 .sorting-menu {
 	background: #ccc;
 	display:flex;
@@ -143,7 +318,7 @@ body {
 /* ============
   INNER_PRODUCTS
 =============== */
-
+/*
 .inner-product {
 	min-height: 150px;
 	display: flex;
@@ -190,25 +365,120 @@ body {
 ===================== */
 
 .main-footer {
+	opacity: 0.8;
+	position: absolute;
+	top:2700px;
+	height: 120px;
 	display: flex;
 	justify-content: space-between;
-	background: #f9fbf6;
+	background: #ffffff;
+	width: 1200px;
 }
 
 .instagram {
+	text-align: center;
+	vertical-align: ;
+	margin-left: 73px;
 	width: 240px;
 }
+.instagram a {
+	display: block;
+	margin-top: 50px;
+	font-size: 21px;
+	line-height: 26px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
 
-.footer-socials {
+.footer-social {
+	margin: 0px 88px;
 	width:400px;
+	text-align: center;
+}
+
+.footer-social a {
+	margin-top: 35px;
+	vertical-align: center;
+	margin-right: 6px;
+	display: inline-block;
+	width:46px;
+	height: 48px;
+	background-color:#81b3d2;
+	
 }
 
 .footer-copyright {
+	padding-top: 35px;
+	
+	margin-right: 73px;
 	width: 240px;
 
 }
 
+.footer-copyright a {
+	position: absolute;
+	bottom: 32px;
+	right: 100px;
+}	
 
+.footer-copyright p {
+	padding-left: 15px;
+}
+
+/* =====================
+	    SPRITE
+===================== */
+
+.sprite {
+    background-image: url("../img/sprite-sedona.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-checkbox {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -10px;
+}
+
+.sprite-checkbox-checked {
+    width: 26px;
+    height: 22px;
+    background-position: -10px -52px;
+}
+
+.social-btn-fb {
+    width: 10px;
+    height: 19px;
+    background-position: 8px -81px;
+}
+
+.sprite-form-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -133px;
+}
+
+.sprite-stars {
+    width: 42px;
+    height: 17px;
+    background-position: -10px -175px;
+}
+
+.social-btn-tw {
+    width: 17px;
+    height: 15px;
+    background-position: 5px -195px;
+}
+
+.social-btn-you {
+    width: 20px;
+    height: 16px;
+    background-position: 4px -232px;
+}
 
 
 
